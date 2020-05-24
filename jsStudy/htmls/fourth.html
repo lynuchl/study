@@ -31,9 +31,14 @@
                   使用attribute改变属性的值;使用style.property改变样式
                   如需向HTML元素分配事件,可以直接使用事件属性;也可以使用js向HTML元素分配事件 -->
 
-
+          <input type="button" value="返回测试" onclick=returnTest()>
           <p id="parameterTest"></p>  
 <script>
+function returnTest(){
+window.history.back();
+}
+
+
   var counter=0;
   function add(){
     var counter=1;
