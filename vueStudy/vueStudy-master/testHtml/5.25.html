@@ -17,11 +17,38 @@
     .prevent:去除默认行为
     除了支持鼠标点击修饰，也支持键盘修饰。可以实现按键提交,一键删除等功能。 -->
     
+    <!-- 4.事件绑定-自定义按键修饰符。
+    自定义按键修饰符名字是自定义的,但是对应的值必须是按键对应的event的keycode值,官方语法为:
+    Vue.config.keycodes.f1=number -->
+
+    <!-- 5.单引号，和双引号好像是通用的 -->
+    <!-- v-model是双向绑定,本质是通过v-bind:value绑定到页面,然后通过监听事件v-on:input修改后台的值。 -->
+        <div id='app-1'>
+            <label>数值A:<input v-model="numberA"></label>
+            <label>数值A:<input v-model='numberB'></label>
+            <button @click='numSum'>计算</button>
+            <label>计算结果为:<label v-text='sum'></label></label>
+        </div>    
+
     <div id='app-0'>
         {{msgClick}}
         <button @click="clickTest(1,2)">点击</button>
     </div>
     <script>
+        new Vue({
+            el:'#app-1',
+            
+            data:{
+                numberA:'',
+                numberB:'',
+                sum:''
+            },
+            methods:{
+                numSum:function(){
+                    this.sum=parseInt(this.numberA)+parseInt(this.numberB);
+                }
+            }
+        })
         new Vue({
             el:'#app-0',
             data:{

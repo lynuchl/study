@@ -61,10 +61,20 @@
     <!-- 7.vue常量测试 -->
     <div id='app-7'>
         <p>{{foo}}</p>
-        <button v-on:click="foo='baz'"></button>
+        <button v-on:click="foo='baz'">clickme</button>
+    </div>
+
+    <div id='app-8'>
+        <p v-for='(item ,i) in arrays'>{{item}}"-----"{{i}}</p>
     </div>
 </body>
 <script>
+    new Vue({
+        el:'#app-8',
+        data:{
+            arrays:['one','two','three','four']
+        }
+    })
     // 8.create钩子创建测试,当vue示例创建时被调用
     // mounted钩子:当实例被挂载时调用
     // updated钩子:由于数据更新导致的虚拟DOM重新渲染和补丁时调用
