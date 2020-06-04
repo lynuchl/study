@@ -1,0 +1,3 @@
+1.Mapper-UserMapper中,添加了@Respository注解。添加注解的意义是什么?
+
+2.后端的数据验证是什么?使用的是hibernate-validator包,不需要额外引入，已经包含在springboot包里了。

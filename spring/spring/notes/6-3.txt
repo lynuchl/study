@@ -1,0 +1,5 @@
+1.spring boot为开发带来了简单:编码;配置;监控;部署。
+2.spring boot运用“约定优于配置”的思想.
+3.spring 中的bean工厂,把每个java类当作bean，spring看作工厂,工厂可以创建bean，即是对bean进行实例化.
+4.IOC也就是bean工厂的过程。
+5.spring的依赖注入和new对象的区别:依赖注入是单例,性能要高(在用时才会从spring容器中取出),降低耦合()
