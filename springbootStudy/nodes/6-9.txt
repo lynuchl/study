@@ -1,0 +1,15 @@
+1.给model层对象进行赋值，或者进行初始化，可以使用springboot源生的@value()在model层进行,也可以是用yaml进行配置的方式，并使用@ConfigurationProperties(prefix="")
+进行绑定。
+
+2.使用JSR303，对属性进行校验,也就是入库时进行的校验。使用的hibernate-validate进行。
+
+3.配置文件可以存放的位置以及优先级依次降低:file:./config;  file:./;   classpath:/config;   classpath:/;
+
+4.templates目录下的所有页面，只能通过Controller跳转。
+
+5.maven引入时，版本号一定要带上。 可以使用在搜索引擎中mvnre进行查询。
+
+6.@Resource和@Autowired：前者是JDK提供的，不允许找不到bean的情况，默认通过name查找，后者是spring提供的，默认通过type查找。
+
+7.在Controller中需要注入service,但是其有多个实现类，就可以使用@Qualifier进行区分，其的意思是合格者，通过这个标识，表明哪个实现类是我们所需要的，
+

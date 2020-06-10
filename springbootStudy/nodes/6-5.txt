@@ -1,0 +1,1 @@
+1.resultType可以指定将查询结果映射成pojo，但需要pojo的属性名和sql查询的列名一致才能映射成功。如果不一致,可以通过resultMap进行关系对应。

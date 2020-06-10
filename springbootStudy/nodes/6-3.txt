@@ -7,7 +7,7 @@
 3.@Scope:声明Spring Bean的作用域.@Scope(singleton(单例)/prototype(每次请求创建bean)/request(每次http请求,该Bean仅在当前http请求有效)/session
 (每次http请求，仅在当前session内有效))。
 
-4.@RestController注解是@Controller和@Respose的合集。
+4.@RestController注解是@Controller和@ResposeBody的合集。
 
 5.@GetMapping("/users")等价于@RequestMapping(value="/users",method=RequestMethod.Get)
 
