@@ -13,5 +13,18 @@
 
 7.在Controller中需要注入service,但是其有多个实现类，就可以使用@Qualifier进行区分，其的意思是合格者，通过这个标识，表明哪个实现类是我们所需要的，
 
+8.@ResponseBody使用此注解后，数据直接写入输入流中，不需要进行视图渲染。
 
+9.@Bean使用在方法上，声明该方法的返回结果是一个由Spring容器管理的bean。
+
+10.@RequestBody和@RequestParam和@ModelAttribute的区别:@RequestBody用于处理json,xml格式的数据，用于接收json/xml数据类型，并将其转换成对应的数据类型；
+@RequestParam用于将指定的请求参数赋值给方法的形参；@ModelAttribute将参数绑定到对象。
+
+11.也可以通过HttpServletRequest接收参数。
+
+12.spring-boot-starter-web内置了许多有用的子依赖:spring-boot-starter;spring-boot-starter-json;spring-boot-starter-tomcat;hibernate-validator;spring-web;
+spring-webmvc
+
+13.@NotNull,@NotEmpty,@NotBlank的区别:NotBlank是针对于String，不为空,且去除前后的空字符串后的length大于零。其中，@NotNull和@NotEmpty限定CharSequence,
+Collection,Map和Arrary不为null，前者可以为空集，后者不能为空集，相关对象的size需要大于零。
 
