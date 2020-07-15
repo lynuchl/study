@@ -24,3 +24,4 @@ OOP允许你定义从上到下的关系，但并不适合定义从左到右的�
 
 4.JPA是一个规范不是一个框架，hibernate是再JPA的规范下的一种实现。Spring Data是Spring社区的子项目,主要用于简化数据的访问。Spring Data JPA给我们提供主要
 的类和接口。Hibernate是JPA规范的一种实现，spring data jpa 是一个JPA数据访问抽象，它只是一个抽象层，底层依赖hibernate.
+

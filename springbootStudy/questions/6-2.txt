@@ -8,6 +8,8 @@
 
 6.springboot整合中,没有了sqlMapCOnfig.xml文件后，怎么配置别名？等其它配置。
 
+7.日志输出，现在的是使用slf4j.使用LoggerFactory获取Logger对象，是需要获取当前类对象，所以没法做一个公共的对象。那么有没有可以直接获取Logger对象的方法？
+
 
 
 1.Mapper-UserMapper中,添加了@Respository注解。添加注解的意义是什么?
