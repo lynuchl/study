@@ -1,0 +1,3 @@
+1.jdk：java程序设计语言；java虚拟机；java API类库统称为JDK。2.把java API类库的Java SE API 子集和java虚拟机这两部分统称为JRE。
+
+2.java EE 的扩展一般以javax.*作为包名，java.*为包名的是java SE API的核心包。
