@@ -1,3 +1,8 @@
 1.jdk：java程序设计语言；java虚拟机；java API类库统称为JDK。2.把java API类库的Java SE API 子集和java虚拟机这两部分统称为JRE。
 
 2.java EE 的扩展一般以javax.*作为包名，java.*为包名的是java SE API的核心包。
+
+3.(1)查看本机的所有虚拟机:jps (2)查看虚拟机的线程堆栈信息:jstack [vmid]
+
+4.Class文件是一组以8位字节为基础单位的二进制流，各个数据项目严格的按照顺序紧凑的排列在Class文件中，中间没有任何分隔符，这使得整个Class文件中的存储内容全部都是程序
+运行的必要数据。
