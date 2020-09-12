@@ -24,3 +24,6 @@
 远程客户的IP地址来决定是否接受客户的请求。3.客户请求记录器。用于将客户请求的详细信息记录到日志文件中。
 
 12.servlet过滤器能够对servlet容器的请求和响应对象进行检查和修改。其本身并不生成请求和响应对象，它只提供过滤作用。servlet过滤器能够在servlet呗调用之前检查Request,修改request header 和request的内容。
+
+13.在struts中，模型标识引用程序的状态和业务逻辑。客户请求是通过ActionServlet控制器处理和转发的。对于采用struts框架的web应用，在WEB应用启动时就会加载并初始化控制器ActionServlet,其从struts-config.xml
+文件中读取配置信息，把它们放到ActionMapping对象中。通过控制器创建action实例对象。
