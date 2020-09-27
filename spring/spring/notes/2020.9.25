@@ -9,3 +9,5 @@
 
 5.xml配置步骤:(1)创建对象(2)注入数据(3)改变作用范围(4)生命周期相关。那么相应的注解有:(1)@Component用于在指定类创建依赖对象,其中@autowire，@qualifier,需要和前者搭配@resource。其中对于基本类型，和
 String类型只能是用@value注解。
+
+6.@bean注解表示将方法的返回值放进spring ioc容器中。当使用注解配置方法，spring框架会去容器中查找是否有可用的bean对象，
