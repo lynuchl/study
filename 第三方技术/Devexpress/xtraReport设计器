@@ -1,0 +1,4 @@
+(1).绑定detailReport数据源脚本
+private void XtraReport_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+this.DetailReport.DataSource=this.DataSource;
+}
