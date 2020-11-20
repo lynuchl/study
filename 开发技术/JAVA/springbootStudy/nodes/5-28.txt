@@ -1,3 +1,6 @@
 1.yaml�﷨���Ǽ�ֵ��,��Կո�Ҫ���ϸ�,ע���ʽ�仯��
 2.��springboot��,���ǿ��� ���·�ʽ������̬��Դ:webjars localhost:8080/wabjars;public;static;/**;resources
-3
+3.springboot配置文件可以放在四个路径下供读取。 ./config;./;classpath:/config/;classpath:/
+
+4.springboot启动会加载大量的自动配置类，我们需要的功能有没有在springboot默认写好的自动配置类中，如果默认配置的已经存在，那么就不需要手动配置，给容器中自动配置类添加组件的时候，会从
+proterties类中获取某些属性，我们只需要在配置文件中指定即可。

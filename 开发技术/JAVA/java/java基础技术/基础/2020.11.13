@@ -1,0 +1,15 @@
+常见 String 类方法：
+1.length（）字符串的长度
+2.charAt（）截取一个字符
+3.getchars（）截取多个字符并由其他字符串接收
+4.getBytes () 将字符串变成一个 byte 数组
+5.toCharArray () 将字符串变成一个字符数组
+6.equals () 和 equalsIgnoreCase () 比较两个字符串是否相等，前者区分大小写，后者不区分
+7.startsWith () 和 endsWith () 判断字符串是不是以特定的字符开头或结束
+8.toUpperCase () 和 toLowerCase () 将字符串转换为大写或小写
+9.concat () 连接两个字符串
+10.substring（）截取字符串
+11.indexOf () 和 lastIndexOf () 前者是查找字符或字符串第一次出现的地方，后者是查找字符或字符串最后一次出现的地方
+12.compareTo () 和 compareToIgnoreCase (）按字典顺序比较两个字符串的大小，前者区分大小写，后者不区分
+13.replace () 替换
+14.trim () 去掉起始和结束的空格
