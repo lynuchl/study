@@ -2,3 +2,17 @@
 private void XtraReport_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
 this.DetailReport.DataSource=this.DataSource;
 }
+
+(2).datasource,数据处理
+using System.Data;
+private void tableCell16_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+DataSet ds=(DataSet)this.DataSource;
+//string showStr=ds.Tables["科室信息"].Rows[0][2].ToString();
+foreach (DataRow item in ds.Tables["科室信息"].Rows)
+  {
+      if (item["ksid"].ToString() == this.tableCell16.Text) 
+      {
+  this.tableCell16.Text=  item["ksmc"].ToString();
+      }
+   }
+}
